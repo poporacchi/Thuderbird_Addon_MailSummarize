@@ -3,6 +3,8 @@
 Thunderbird で受信したメールをローカル AI (Ollama) で要約し、ワンクリックで Obsidian に保存できるアドオンです。
 すべての処理がローカルで完結するため、プライバシーを保ちつつ高度なメール管理が可能です。
 
+![Image](https://github.com/user-attachments/assets/09fa1d7d-7e2f-4431-9530-ecf89bad45bb)
+
 ## 🌟 主な機能
 - **ローカル AI 要約**: Ollama (Gemma 3) を使用した高品質な日本語要約。
 - **スレッド履歴の統合**: 過去のやり取り（引用文）を含めた文脈のある要約。
