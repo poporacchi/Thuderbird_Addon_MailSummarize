@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Show Subject",
+  "version": "1.0",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "showsubject@example.com",
+      "strict_min_version": "115.0"
+    }
+  },
+  "permissions": [
+    "messagesRead",
+    "activeTab",
+    "https://huggingface.co/*",
+    "https://*.huggingface.co/*",
+    "https://*.hf.co/*",
+    "https://cdn.jsdelivr.net/*",
+    "unlimitedStorage",
+    "http://localhost:11434/*",
+    "tabs"
+  ],
+  "message_display_action": {
+    "default_title": "要約を表示"
+  },
+  "background": {
+    "page": "background.html"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval' blob: https://cdn.jsdelivr.net; object-src 'self'; connect-src * http://localhost:11434 https://huggingface.co https://*.huggingface.co https://cdn-lfs.huggingface.co https://*.hf.co https://cdn.jsdelivr.net;"
+}

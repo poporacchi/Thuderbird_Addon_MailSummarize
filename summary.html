@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>メール要約 (Ollama)</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #0078d4;
+            border-bottom: 2px solid #0078d4;
+            padding-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        #subject {
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        #status {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        #summary {
+            background: #f3f3f3;
+            padding: 15px;
+            border-radius: 4px;
+            border-left: 4px solid #0078d4;
+            min-height: 100px;
+        }
+
+        /* Markdown 表示用の追加スタイル */
+        #summary ul {
+            padding-left: 20px;
+            margin: 4px 0;
+        }
+
+        #summary li {
+            margin-bottom: 2px;
+        }
+
+        #summary p {
+            margin: 4px 0;
+        }
+
+        #summary strong {
+            color: #0078d4;
+        }
+
+        #summary code {
+            background: #e0e0e0;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+
+        #summary h1,
+        #summary h2,
+        #summary h3 {
+            margin: 10px 0 5px 0;
+            font-size: 1.1em;
+            color: #0078d4;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #999;
+            text-align: right;
+        }
+
+        button {
+            background: #0078d4;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        button:hover {
+            background: #005a9e;
+        }
+
+        #obsidian-btn {
+            background: #483699;
+            /* Obsidian-like purple */
+        }
+
+        #obsidian-btn:hover {
+            background: #3a2b7a;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>AI メール要約</h2>
+        <div id="subject">読み込み中...</div>
+        <div id="status">準備中...</div>
+        <div id="summary">ここに要約が表示されます。</div>
+
+        <div class="footer">
+            Powered by Ollama (Gemma 3)
+            <br>
+            <button id="obsidian-btn" style="display:none;">Obsidian に保存</button>
+            <button id="close-btn">閉じる</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="summary.js"></script>
+</body>
+
+</html>

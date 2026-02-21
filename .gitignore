@@ -1,0 +1,13 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Thunderbird / Browser temporary files
+*.log
+*.tmp
+
+# Version control
+.git/
+
+# Documentation artifacts (User choice)
+# brain/
