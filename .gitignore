@@ -9,5 +9,5 @@ Thumbs.db
 # Version control
 .git/
 
-# Documentation artifacts (User choice)
-# brain/
+# Documentation artifacts
+docs/
