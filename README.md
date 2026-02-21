@@ -1,4 +1,4 @@
-# Thunderbird AI Summarizer with Ollama \u0026 Obsidian
+# Thunderbird Local AI Summarizer
 
 Thunderbird で受信したメールをローカル AI (Ollama) で要約し、ワンクリックで Obsidian に保存できるアドオンです。
 すべての処理がローカルで完結するため、プライバシーを保ちつつ高度なメール管理が可能です。
