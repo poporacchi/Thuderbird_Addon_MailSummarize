@@ -15,7 +15,7 @@ Thunderbird で受信したメールをローカル AI (Ollama) で要約し、�
 ## 📋 動作要件
 - **Thunderbird**: 最新版
 - **Ollama**: サーバーが起動していること
-- **AI モデル**: `gemma3:12b` (または `gemma2`)
+- **AI モデル**: `gemma3:12b`
 - **Obsidian**: 保存機能を利用する場合
 
 ## 🚀 セットアップ方法
