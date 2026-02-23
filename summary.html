@@ -104,6 +104,32 @@
             background: #005a9e;
         }
 
+        .controls {
+            margin-bottom: 15px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .length-btn {
+            background: #f0f0f0;
+            color: #333;
+            border: 1px solid #ccc;
+            padding: 5px 12px;
+            font-size: 0.9em;
+            margin-left: 0;
+        }
+
+        .length-btn:hover {
+            background: #e0e0e0;
+        }
+
+        .length-btn.active {
+            background: #0078d4;
+            color: white;
+            border-color: #0078d4;
+        }
+
         #obsidian-btn {
             background: #483699;
             /* Obsidian-like purple */
@@ -120,10 +146,17 @@
         <h2>AI メール要約</h2>
         <div id="subject">読み込み中...</div>
         <div id="status">準備中...</div>
+
+        <div class="controls" id="length-controls" style="display:none;">
+            <span style="font-size: 0.9em; color: #666;">要約の長さ:</span>
+            <button class="length-btn" data-length="short">短め</button>
+            <button class="length-btn active" data-length="medium">標準</button>
+            <button class="length-btn" data-length="long">長め</button>
+        </div>
+
         <div id="summary">ここに要約が表示されます。</div>
 
         <div class="footer">
-            Powered by Ollama (Gemma 3)
             <br>
             <button id="obsidian-btn" style="display:none;">Obsidian に保存</button>
             <button id="close-btn">閉じる</button>
